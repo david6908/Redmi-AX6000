@@ -51,6 +51,7 @@
 +CONFIG_CMD_BUTTON=y
 +CONFIG_CMD_CACHE=y
 +CONFIG_CMD_CDP=y
++CONFIG_CMD_CPU=y
 +CONFIG_CMD_DHCP=y
 +CONFIG_CMD_DM=y
 +CONFIG_CMD_DNS=y
@@ -246,6 +247,7 @@
 +CONFIG_CMD_BUTTON=y
 +CONFIG_CMD_CACHE=y
 +CONFIG_CMD_CDP=y
++CONFIG_CMD_CPU=y
 +CONFIG_CMD_DHCP=y
 +CONFIG_CMD_DM=y
 +CONFIG_CMD_DNS=y
@@ -442,6 +444,7 @@
 +CONFIG_CMD_BUTTON=y
 +CONFIG_CMD_CACHE=y
 +CONFIG_CMD_CDP=y
++CONFIG_CMD_CPU=y
 +CONFIG_CMD_DHCP=y
 +CONFIG_CMD_DM=y
 +CONFIG_CMD_DNS=y
@@ -637,6 +640,7 @@
 +CONFIG_CMD_BUTTON=y
 +CONFIG_CMD_CACHE=y
 +CONFIG_CMD_CDP=y
++CONFIG_CMD_CPU=y
 +CONFIG_CMD_DHCP=y
 +CONFIG_CMD_DM=y
 +CONFIG_CMD_DNS=y
@@ -862,14 +866,14 @@
 +
 +	keys {
 +		compatible = "gpio-keys";
-+
++/*
 +		factory {
 +			label = "reset";
 +			gpios = <&gpio 9 GPIO_ACTIVE_LOW>;
 +		};
-+
++*/
 +		wps {
-+			label = "wps";
++			label = "reset";
 +			gpios = <&gpio 10 GPIO_ACTIVE_LOW>;
 +		};
 +	};
